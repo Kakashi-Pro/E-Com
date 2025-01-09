@@ -1,0 +1,27 @@
+.Seller-table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    top: 157px;
+    }
+    
+    .Seller-table th, .Seller-table td {
+      padding: 10px;
+      border: 1px solid black;
+      text-align: center;
+    }
+    
+    .Seller-table th {
+      background-color: #53bd53;
+    }
+    
+    .error-message {
+      color: red;
+      font-weight: bold;
+    }
+    
+    .loading {
+      font-style: italic;
+      color: gray;
+    }
+    

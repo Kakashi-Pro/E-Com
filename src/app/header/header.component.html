@@ -1,0 +1,86 @@
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<header>
+  <div class="bazaaroo" link rel="preconnect">
+    Bazaaroo
+</div>
+    <nav>
+        <ul>
+            <ng-container class="login-1" *ngIf="isLoggedIn==true; else loginLink">
+                <!-- Section for logged-in user details -->
+                <section>
+                  <div class="dropdown">
+                    <button class="login-button" (mouseenter)="showDropdown = true" (mouseleave)="showDropdown = false">
+                         Account
+                      <div class="dropdown-content" *ngIf="showDropdown">
+                        <a routerLink="/account"></a>
+                           Welcome  {{ name }}
+                              
+                           <a routerLink="/Orders"><i class="fas fa-box"></i>Orders</a>
+                           <ng-container *ngIf="isAdmin==true">
+                            <li><a routerLink="/product">Add Product</a></li>
+                            <li><a routerLink="/ProductCategory">Add Product Category</a></li>
+                            <li><a routerLink="PaymentHistory">Payment History</a></li>
+                            <li><a routerLink="Seller-Table">Sellers Details</a></li>
+                            <li><a routerLink="Users">Users Details</a></li>
+                            <li><a routerLink="ProductCategory-Table">Product Category</a></li>
+                            <li><a routerLink="Orders">Orders Details</a></li>
+                            <li><a routerLink="Product-Table">Product Details</a></li>
+                            <li><a routerLink="Payment">Payment Details</a></li>
+                        </ng-container>
+                        <ng-container *ngIf="isAuthorization==true">
+                          <li><a routerLink="/product">Add Product</a></li>
+                          <li><a routerLink="/ProductCategory">Add Product Category</a></li>
+                          <li><a routerLink="PaymentHistory">Payment History</a></li>
+                          <li><a routerLink="ProductCategory-Table">Product Category</a></li>
+                          <li><a routerLink="Orders">Orders Details</a></li>
+                          <li><a routerLink="Product-Table">Product Details</a></li>
+                          <li><a routerLink="Payment">Payment Details</a></li>
+                          
+                          
+                      </ng-container> 
+                        <button class="logout-button" (click)="logout()">Logout</button>
+                      </div>
+                    </button>
+                </div>
+                </section>
+              </ng-container>
+              
+              <!-- Alternative content when the user is not logged in -->
+              <ng-template #loginLink>
+                <div  class="dropdown" >
+                  <button class="login-button" (mouseenter)="showDropdown = true" (mouseleave)="showDropdown = false">
+                    <i class="fas fa-user"></i>
+                    Login
+                    <div class="dropdown-content" *ngIf="showDropdown">
+                      <a  routerLink="/login"><i class="fas fa-user"></i>My Profile</a>
+                      <br>
+                      <a routerLink="/login"><i class="fas fa-box"></i>Orders</a>
+                      <br>
+                      <a routerLink="/login">Add-Link</a>
+                      <br>
+                      <a routerLink="/login">Add-link</a>
+                      <br>
+                      <a routerLink="/login">Add-Link</a>
+                    </div>
+                  </button> 
+                </div>
+              </ng-template>
+              <div class="cart"><li><a class="a-cart" routerLink="/cart" ><i class="fas fa-shopping-cart"></i>   Cart</a></li>  </div>
+                 
+        </ul>    
+    </nav>
+
+    <div class="search-bar">
+           
+      <input class="search-text"  type="text" placeholder="Search for Product Brand and More">
+      <i class="fas fa-search search-icon" id="search1" ></i>
+   </div>
+</header>
+

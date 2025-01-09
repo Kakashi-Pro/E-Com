@@ -1,0 +1,27 @@
+<div *ngIf="isLoading">Loading...</div>
+
+<div *ngIf="error" class="error-message">
+  {{ error }}
+</div>
+
+<table *ngIf="!isLoading && !error" class="payment-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>StripePaymentId</th>
+      <th>UserId</th>
+      <th>Amount</th>
+      <th>PaymentType</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pay of payment">
+      <td>{{ pay.id }}</td>
+      <td>{{ pay.stripePaymentMethodId }}</td>
+      <td>{{ pay.userId }}</td>
+      <td>{{pay.amount}}</td>
+       <td>{{pay.paymentType}}</td>  
+    </tr>
+  </tbody>
+</table>
+

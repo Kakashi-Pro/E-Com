@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    
+
+  {
+    "name": "ng serve",
+    "url": "http://localhost:4200",
+    "request": "launch",
+    "preLaunchTask": "npm: start",
+     "type": "chrome"
+    
+    
+  },
+  {
+    "name": "ng test",
+    "type": "chrome",
+       "request": "launch",
+    "preLaunchTask": "npm: test",
+    "url": "http://localhost:4200",
+    "timeout": 30000 // Adjust if necessary
+  }
+  ]
+}

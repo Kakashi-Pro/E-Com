@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            top: -114px;
+            position: relative;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input {
+            width: 66%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  left: 59px;
+  position: relative;
+        }
+        button {
+            width: 43%;
+            padding: 10px;
+            background-color: #474184;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            left: 114px;
+        }
+        button:hover {
+            background-color: #474184;
+        }
+        .signup-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .signup-link a {
+            color: #474184;
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <input type="emailOrPhoneNumber" name="emailOrPhoneNumber" id="emailOrPhoneNumber" [(ngModel)]="login.emailOrPhoneNumber" placeholder="Enter Email/Mobile Number" class="form-control" required>
+        <input type="password" name="password" id="password" [(ngModel)]="login.password" placeholder="Password" class="form-control" required>
+        <button type="submit">Login</button>
+    </form>
+    <div class="signup-link">
+        <p>Don't have an account? <a href="User">Create an account</a></p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+
+.ProductCategory-table{
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    top: 157px;
+    }
+    
+    .ProductCategory-table th, .ProductCategory-table td {
+      padding: 10px;
+      border: 1px solid black;
+      text-align: center;
+    }
+    
+    .ProductCategory-table th {
+      background-color: #53bd53;
+    }
+    
+    .error-message {
+      color: red;
+      font-weight: bold;
+    }
+    
+    .loading {
+      font-style: italic;
+      color: gray;
+    }
+    

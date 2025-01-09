@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Items Grid</title>
+</head>
+<body>
+  <div></div>
+    <div class="container" >
+        <div class="grid" >
+            <!-- Example grid items, replace with your actual shop items -->
+            <div class="item"  *ngIf="product">
+            <div class="image-container">
+                <img [src]="product.imagePath" height="50">
+            </div> 
+            <div class="button-box">
+                <button class="button-buynow" (click)="buyNow()">Buy Now</button>
+                <button class="button-addToCart" (click)="addToCart()">Add Cart</button>
+            </div> 
+
+            <div class="detail-box">
+                 <p class="name">{{product.productName}}</p> 
+                 <p class="Ratings">968 Ratings & 85 Reviews</p>
+                 <div class="price-container">
+                   <span class="Special-price">Special price</span><br>
+                    <span class="discount-price">₹{{ getDiscountedPrice(product) }}</span>
+                    <span class="original-price">₹{{product.price}} </span>
+                    <span class="discount-percentage">{{product.discount}}% off</span>
+                  </div>
+                  <!-- offers -->
+
+                  <div class="offers-container">
+                    <div class="offer" id="offer1">
+                      <div class="offer-title">Bank Offer</div>
+                      <div class="offer-description">5% Unlimited Cashback on <span class="highlight">Flipkart Axis Bank Credit Card</span></div>
+                      <div class="tnc">T&C</div>
+                    </div>
+                  
+                    <div class="offer" id="offer2">
+                      <div class="offer-title">Bank Offer</div>
+                      <div class="offer-description">10% off up to ₹1,500 on <span class="highlight">Axis Bank Credit Card</span> on orders of ₹4,990 and above</div>
+                      <div class="tnc">T&C</div>
+                    </div>
+                  
+                    <div class="offer" id="offer3">
+                      <div class="offer-title">Special Price</div>
+                      <div class="offer-description">Get extra 65% off (price inclusive of cashback/coupon)</div>
+                      <div class="tnc">T&C</div>
+                    </div>
+                  
+                    <div class="offer" id="offer4">
+                      <div class="offer-title">Partner Offer</div>
+                      <div class="offer-description">Make a purchase and enjoy a surprise cashback/coupon that you can redeem later!</div>
+                      <div class="tnc">Know More</div>
+                    </div>
+                  
+                    <div class="more-offers" id="more-offers" style="display: none;">
+                      <div class="offer" id="offer5">
+                        <div class="offer-title">No Cost EMI</div>
+                        <div class="offer-description">Available on Bajaj Finserv EMI Card on cart value above ₹2,999</div>
+                        <div class="tnc">T&C</div>
+                      </div>
+                      <div class="offer" id="offer6">
+                        <div class="offer-title">Bank Offer</div>
+                        <div class="offer-description">10% off up to ₹1,750 on <span class="highlight">RBL Bank Credit Card EMI</span> on orders of ₹4,990 and above</div>
+                        <div class="tnc">T&C</div>
+                      </div>
+                      <div class="offer" id="offer7">
+                        <div class="offer-title">Limited Time Offer</div>
+                        <div class="offer-description">Get ₹3,000 off on <span class="highlight">YES BANK Credit Card</span> Transactions on orders of ₹74,990 and above</div>
+                        <div class="tnc">T&C</div>
+                      </div>
+                    </div>
+                  
+                    <button class="view-more" id="view-more-btn">View More</button>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            document.getElementById('view-more-btn').onclick = function() {
+                                const moreOffers = document.getElementById('more-offers');
+                                // Check the current display style and toggle
+                                if (moreOffers.style.display === 'none' || moreOffers.style.display === '') {
+                                    moreOffers.style.display = 'block'; // Show more offers
+                                    this.style.display = 'none'; // Hide the View More button
+                                }
+                            };
+                        });
+                    </script>
+                  </div>
+                  
+                 <!-- address                   -->
+                  <p class="Highlights">Highlights<br>{{product.Highlights}} Panel Type: IPS Panel
+                    Screen Resolution Type: 4K Ultra HD
+                    Brightness: 350 nits
+                    Response Time: 5 ms | Refresh Rate: 60 Hz
+                    HDMI Ports - 1</p>
+                 <div class="Seller">Seller:{{product.Seller}}
+                    <p>{{product.returndays}} Days Service Center Replacement/Repair</p>
+                    <p>GST invoice available</p>
+                 </div>
+                <p class="Discription">Discription:{{ product.productdescription }}</p>
+                
+            </div>
+               
+                
+               
+               
+                
+            </div>
+
+         
+
+        
+            
+        </div>
+    </div>
+</body>
+</html>

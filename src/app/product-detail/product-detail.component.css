@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #f8f8f8; /* Light background for better contrast */
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    top: 1px;
+}
+
+
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 374px;
+    margin: 0;
+    border: 1px solid black;
+    width: 423px;
+    left: 17px;
+    position: relative;
+    top: 31px;
+  }
+  .name{
+    line-height: 1.4;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  .Ratings{
+    font-weight: 500;
+    color: #878787;
+  }
+
+
+h1 {
+    text-align: center; /* Center the title */
+    color: #333; /* Dark color for the title */
+}
+
+.grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between items */
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
+    width: 1474px;
+    left: 2px;
+    position: relative;
+    top: 132px;
+}
+.ProductName{
+    color: #333;
+  margin: 10px 0;
+  position: relative;
+  top: -404px;
+  left: -15px;
+}
+
+
+
+.item img {
+    max-width: 65%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+}
+
+.item h5 {
+    color: #333; /* Darker color for product name */
+    margin: 10px 0; /* Space around product name */
+}
+
+.item p {
+    color: #555; /* Lighter color for text */
+    margin: 5px 0; /* Space around text */
+}
+
+.button-buynow{
+    position: relative;
+    top: 22px;
+    left: -37px;
+    height: 54px;
+    width: 157px;
+    background-color: #ff9f00;
+  }
+
+.button-addToCart{
+    position: relative;
+    top: 22px;
+    left: 39px;
+    height: 54px;
+    width: 157px;
+    background-color: #fb641b;
+}
+
+
+
+/* css for bank offer */
+
+.offers-container{
+    position: relative;
+  top: -378px;
+  left: 251px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.offers-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.offers-list li {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.offers-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.offers-list span {
+    font-weight: bold;
+}
+
+.offers-list a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.offers-list a:hover {
+    text-decoration: underline;
+}
+/* view more offer Css*/
+
+
+.hidden {
+    display: none;
+}
+
+.view-more {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.detail-box{
+    position: relative;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    top: -449px;
+    left: 474px;
+    text-align: left;
+}
+.button-box{
+    position: relative;
+    height: 101px;
+    width: 427px;
+    top: 44px;
+    left: 17px;
+}
+
+.price-container {
+    font-family: Arial, sans-serif;
+  }
+
+  .original-price {
+    text-decoration: line-through;
+    color: #888; /* Grey color for original price */
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .discount-price {
+    font-weight: bold;
+    color: black; /* Red color for the discount price */
+    font-size: 1.2em; /* Slightly larger */
+  }
+
+  .discount-percentage {
+    color: green; /* Green color for discount percentage */
+    font-weight: lighter;
+  }
+  .Special-price{
+    color: green; /* Green color for discount percentage */
+    font-weight: bold;
+  }
+
+  .offers-container {
+    font-family: Arial, sans-serif;
+    top: 10px;
+    left: 0px;
+}
+
+.offer {
+    background-color: #ffffff;       /* White background for each offer */           /* Space between offers */
+    position: relative;               /* Relative positioning */
+}
+
+
+
+.offer-title {
+    font-weight: bold;                /* Bold title */
+    font-size: 1.2em;                /* Slightly larger font size */
+    margin-bottom: 5px;              /* Space below title */
+    color: #333;                     /* Dark text color */
+}
+
+.offer-description {
+    color: #555;                     /* Darker grey for description */
+    margin-bottom: 5px;              /* Space below description */
+}
+
+.highlight {
+    color: #e91e63;                  /* Pinkish color for highlights */
+    font-weight: bold;               /* Bold text for highlights */
+}
+
+.tnc {
+    font-size: 0.9em;                /* Smaller font size for T&C */
+    color: #999;                     /* Light grey for terms */
+}
+
+.view-more {
+    background-color: white;
+    color: blue;
+    left: -17px;
+    position: relative;
+}
+.Discription{
+    position: relative;
+    top: 1px;
+    font-size: 0.9em;                /* Smaller font size for T&C */
+    color: #999;  
+}
+.Seller{
+    position: relative;
+    top: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;                /* Smaller font size for T&C */
+    color: #999; 
+    margin: 10px 0;  
+}
+.Highlights{
+    position: relative;
+    top: 1px;
+    font-family: Arial, sans-serif; /* Change as needed */
+    font-size: 0.9em; /* Adjust size as necessary */
+    color: #333; /* Change text color as needed */
+    margin: 10px 0; 
+}
+
+
+  
+
+

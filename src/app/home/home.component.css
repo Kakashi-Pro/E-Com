@@ -1,0 +1,267 @@
+   /* Basic styling for demonstration purposes */
+   .container {
+    max-width: 877px;
+margin: 0 auto;
+padding: 26px;
+position: relative;
+left: -287px;
+}
+.mainbox{
+    position: relative;
+    top: 129px;
+}
+.grid {
+    display: inline-flex;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+.item {
+     background-color: #f0f0f0;
+     border: 1px solid #ccc;
+     text-align: center;
+     width: 248px;
+     height: 311px;
+}
+.Setimage{
+    max-width: 100%;
+height: 242px;
+margin-top: 10px;
+
+}
+
+.orignal-price{
+    color: #888;
+font-size: 1.0em;
+top: -44px;
+position: relative;
+font-weight: lighter;
+}
+
+.orignal-price2{
+    color: #888;
+font-size: 1.0em;
+top: -44px;
+position: relative;
+font-weight: lighter;
+}
+
+.price{
+    text-decoration: line-through; /* Strikethrough for original price */
+    color: #888;
+    top: -35px;
+  position: relative;
+  left: 57px;
+}
+.price2{
+    text-decoration: line-through; /* Strikethrough for original price */
+    color: #888;
+    top: -35px;
+  position: relative;
+  left: 57px;
+}
+
+.price3{
+    text-decoration: line-through; /* Strikethrough for original price */
+    color: #888;
+    top: -35px;
+  position: relative;
+  left: 57px;
+}
+
+.product-name{
+  position: relative;
+  top: -150px;
+}
+.product-name2{
+    position: relative;
+    top: -150px;
+}
+
+.link{
+text-decoration: none; /* Removes the underline */
+color: inherit; 
+}
+
+/* 2nd Container*/
+ .container-2 {
+    max-width: 877px;
+margin: 0 auto;
+padding: 5px;
+position: relative;
+left: -287px;
+}
+.grid-2 {
+    display: inline-flex;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+.item-2 {
+     background-color: #f0f0f0;
+     border: 1px solid #ccc;
+     text-align: center;
+     width: 248px;
+     height: 311px;
+}
+.Setimage2{
+    max-width: 100%;
+height: 242px;
+margin-top: 10px;
+}
+
+
+
+.link2{
+text-decoration: none; /* Removes the underline */
+color: inherit; 
+}
+
+/* 3rd Container*/
+.container-3 {
+    max-width: 877px;
+margin: 0 auto;
+padding: 5px;
+position: relative;
+left: -287px;
+}
+.grid-3 {
+    display: inline-flex;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+.item-3 {
+     background-color: #f0f0f0;
+     border: 1px solid #ccc;
+     text-align: center;
+     width: 239px;
+     height: 300px;
+}
+.Setimage3 {
+    max-width: 100%;
+height: 242px;
+margin-top: 10px;
+}
+
+.discount-price{
+    color:black;
+font-size: 1.0em;
+position: relative;
+font-weight: lighter;
+top: -123px;
+left: -84px;
+}
+
+.discount-price2{
+    color:black;
+    font-size: 1.0em;
+    position: relative;
+    font-weight: lighter;
+    top: -124px;
+    left: -84px;
+}
+
+.discount-price3
+{
+    color:black;
+    font-size: 1.0em;
+    top: -22px;
+    position: relative;
+    font-weight: lighter;
+    top: -123px;
+    left: -84px;
+}
+
+
+.link3{
+text-decoration: none; /* Removes the underline */
+color: inherit; 
+}
+
+.discount{
+    position: relative;
+    top: -16px;
+  left: -68px;
+  color: red;
+}
+
+.discount2{
+    position: relative;
+    top: -16px;
+  left: -68px;
+  color: red;
+}
+
+.discount3{
+    position: relative;
+    top: -16px;
+  left: -68px;
+  color: red; 
+}
+/* For sliders code*/
+/* Swiper container */
+.swiper-container {
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height based on content */
+    padding: 20px 0; /* Optional padding */
+}
+
+@media(max-width: 422px) {
+    .container, .container-2, .container-3 {
+        padding: 10px; /* Further reduced padding */
+    }  
+}
+
+@media(max-width: 412px) {
+    .container, .container-2, .container-3 {
+        max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr; /* Single column for vertical layout */
+    gap: 20px; /* Further reduced padding */
+    } 
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      } 
+      .grid-2{
+        display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+      }
+      .grid-3{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .item{
+        background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 343px;
+  height: 311px;
+   left: 294px;;
+  position: relative;
+      }
+
+      .item-2{
+        background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 343px;
+  height: 311px;
+   left: 294px;;
+  position: relative;
+      }
+      .item-3{
+        background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 343px;
+  height: 311px;
+  left: 294px;;
+  position: relative;
+      }
+}
+
+

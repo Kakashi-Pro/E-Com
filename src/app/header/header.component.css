@@ -1,0 +1,405 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: #474184;
+  color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin: 0;
+  top: 0;
+  height: 136px;
+}
+
+.bazaaroo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 54px;
+  font-weight: 600;
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  animation: _ngcontent-ng-c3844342915_fadeIn 2s ease-in-out;
+  height: 56px;
+  width: 149px;
+  top: -6px;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.bazaaroo:hover {
+  color: #ecf0f1; /* Change color on hover */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+nav {
+    flex-grow: 1; /* Allows the nav to take up available space */
+}
+
+.a-cart i {
+  margin-right: 11px;
+  font-size: 20px;
+   /* Space between icon and text */
+}
+.background-color{
+height: -10px;
+height: 39px;
+width: 665px;
+top: 0px;
+position: relative;
+right: 398px;
+}
+.search-text{
+  position: relative;
+  top: -16px;
+  width: 553px;
+  height: 39px;
+  right: 451px;
+  font-size: medium;
+  border-radius: 7px;
+  padding-left: 62px;
+
+}
+.login-button i {
+  margin-right: 8px;
+   /* Space between icon and text */
+  color: black; /* Icon color */
+  font-size: 20px;
+}
+
+nav ul {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Flex layout for horizontal list */
+    margin: 0;
+    padding: 0;
+    top: -15px;
+  position: relative;
+}
+
+nav li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: small; /* Make links bold */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #ecf0f1; /* Light color on hover */
+}
+
+ng-container {
+    display: flex;
+    align-items: center;
+    /* Align welcome text and account link */
+}
+
+ng-template {
+    display: flex;
+    align-items: center; /* Align login link */
+}
+
+.login-1{
+ text-align: right;
+}
+
+
+/* login button css */ 
+
+
+/* Style for the login link */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left:1037px;
+}
+.a-cart{
+  top: 9px;
+  position: relative;
+  left: -25px;
+}
+
+.login-button {
+  position: relative;
+  cursor: pointer;
+  height: 36px;
+  width: 123px;
+  font-size: medium;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  top: 2px;
+  left: -52px;
+}
+.cart{
+  position: relative;
+  cursor: pointer;
+  height: 32px;
+  width: 123px;
+  font-size: medium;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  left:1067px ;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+   width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  height: 300px;
+}
+
+.dropdown-content p {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #474184;
+  font-size: large;
+}
+
+.dropdown-content p:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/* Show dropdown when hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: black;
+}
+#search1{
+  position: relative;
+  top: -14px;
+  right: 1040px;
+  font-size: medium;
+}
+.logout-button{
+  padding: 10px 15px;
+  cursor: pointer;
+  height: 30px;
+  width: 120px;
+  background-color: orange;
+  font-size: small;
+  font-style: normal;
+  color: #000;
+}
+
+.dropdown-content a {
+  color: black; /* Change this to your desired color */
+  text-decoration: none; /* Optional: remove underline */
+    display: block; /* Makes each link take up the full width */
+    padding: 8px 12px;
+    text-align: left;
+}
+
+@media (max-width: 768px ) {
+  .bazaaroo{
+    font-family: 'Dancing Script', cursive;
+  font-size: 54px;
+  font-weight: 600;
+  color:orange;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  animation: _ngcontent-ng-c3844342915_fadeIn 2s ease-in-out;
+  height: 56px;
+  width: 149px;
+  top: -6px;
+  position: relative;
+  }
+}
+/* hearder for size 414 px and 412px and 420px */
+
+
+    @media (max-width: 422px) {
+      .bazaaroo{
+        font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  font-weight: 600;
+  color:white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 20px 0;
+        position: relative;
+        top: -34px;
+        width: 369px;
+        height: 35px;
+        right: -6px;
+      }
+
+      .search-text{
+        top: 20px;
+        width: 306px;
+        height: 33px;
+        right: 389px;
+      }
+      .login-button{
+        position: relative;
+  cursor: pointer;
+  height: 36px;
+  width: 123px;
+  font-size: medium;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  top: -19px;
+  left: -931px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .bazaaroo{
+        font-family: 'Dancing Script', cursive;
+        font-size: 28px;
+        font-weight: 600;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+              margin: 20px 0;
+        position: relative;
+        top: -34px;
+        width: 369px;
+        height: 35px;
+        right: -6px;
+      }
+
+      .search-text{
+        top: 20px;
+        width: 306px;
+        height: 33px;
+        right: 389px;
+      }
+
+      .login-button{
+        position: relative;
+  cursor: pointer;
+  height: 36px;
+  width: 123px;
+  font-size: medium;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  top: -19px;
+  left: -931px;
+      }
+    }
+
+    @media (max-width: 414px) {
+      .bazaaroo{
+        font-family: 'Dancing Script', cursive;
+        font-size: 28px;
+        font-weight: 600;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+              margin: 20px 0;
+        position: relative;
+        top: -34px;
+        width: 369px;
+        height: 35px;
+        right: -6px;
+      }
+
+      .search-text{
+        position: relative;
+        top: 20px;
+    width: 306px;
+    height: 33px;
+    right: 389px;
+      }
+
+      .login-button{
+        position: relative;
+  cursor: pointer;
+  height: 36px;
+  width: 123px;
+  font-size: medium;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  top: -19px;
+  left: -931px;
+      }
+    }
+  
+    @media (max-width: 412px) {
+      .bazaaroo{
+        font-family: 'Dancing Script', cursive;
+        font-size: 28px;
+        font-weight: 600;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+              margin: 20px 0;
+        position: relative;
+        top: -34px;
+        width: 369px;
+        height: 35px;
+        right: -6px;
+      }
+
+      .search-text{
+        position: relative;
+        top: 20px;
+        width: 306px;
+        height: 33px;
+        right: 389px;
+      }
+      #search1{
+        position: relative;
+  top: 19px;
+  right: 1469px;
+  font-size: medium;
+      }
+      header{
+        display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: #474184;
+  color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin: 0;
+  top: 0;
+  height: 136px;
+  left: 0%;
+      }
+      .login-button{
+        position: relative;
+  cursor: pointer;
+  height: 36px;
+  width: 123px;
+  font-size: medium;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  top: -19px;
+  left: -931px;
+      }
+    }
+

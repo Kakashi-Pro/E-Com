@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Items Grid</title>
+</head>
+<body>
+    <div class="mainbox">
+    <div class="container" >
+        <div class="grid" >
+            <!-- Example grid items, replace with your actual shop items -->
+            <div class="item"  *ngFor="let product of products| slice:0:8">
+                 <a class="link" [routerLink]="['/product', product.id]">
+                <img class="Setimage" [src]="product.imagePath" height="30">
+                <h5 class="discount"  > Discount {{product.discount}}%</h5>
+                <h5 class="orignal-price"  > M.R.P: <p class="price">₹{{product.price}}</p></h5>
+                <h5 class="discount-price" >  ₹{{ getDiscountedPrice(product) }}</h5>
+                <h5 class="product-name"> {{product.productName}}</h5>
+            </a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-2" >
+        <div class="grid-2" >
+            <!-- Example grid items, replace with your actual shop items -->
+            <div class="item-2"  *ngFor="let product of products|slice:8:16">
+                 <a  class="link2" [routerLink]="['/product', product.id]">
+                <img class="Setimage2" [src]="product.imagePath" height="30">
+                <h5 class="discount2"  > Discount {{product.discount}}%</h5>
+                <h5 class="orignal-price2"  > M.R.P: <p class="price2">₹{{product.price}}</p></h5>
+                <h5 class="discount-price2" > ₹{{ getDiscountedPrice(product) }}</h5>
+                <h5 class="product-name2"> {{product.productName}}</h5>
+            </a>
+                
+            </div>
+
+         
+
+        
+            
+        </div>
+    </div>
+
+    <div class="container-3" >
+        <div class="grid-3" >
+            <!-- Example grid items, replace with your actual shop items -->
+            <div class="item-3"  *ngFor="let product of products| slice:16:24">
+                 <a class="link3" [routerLink]="['/product', product.id]">
+                <img class="Setimage3" [src]="product.imagePath" height="30">
+                <h5 class="discount3"  > Discount {{product.discount}}%</h5>
+                <h5 class="orignal-price3"  > M.R.P: <p class="price3">₹{{product.price}}</p></h5>
+                <h5 class="discount-price3" > ₹{{ getDiscountedPrice(product) }}</h5>
+                <h5 class="product-name3"> {{product.productName}}</h5>
+            </a>
+                
+            </div>
+ 
+        </div>
+    </div>
+</div>
+</body>
+</html>
